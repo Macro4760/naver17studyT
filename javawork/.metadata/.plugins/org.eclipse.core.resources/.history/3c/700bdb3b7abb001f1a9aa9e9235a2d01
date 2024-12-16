@@ -18,9 +18,8 @@ public class Ex7LoopExam {
 		 */
 		Scanner sc=new Scanner(System.in);
 		int x,y,result;//1번에 필요한 변수
-		int n,fact;//2번에 필요한 변수
-		int r; //3번에 필요한 변수
-		double area;//3번에 필요한 변수
+		int n,fact=1;//2번에 필요한 변수
+		int r,area; //3번에 필요한 변수
 		int menu; //번호 입력받을 변수
 		
 		Loop:
@@ -40,18 +39,8 @@ public class Ex7LoopExam {
 				System.out.println(x+" 의"+y+"승은 "+result+"입니다");
 				break;
 			case 2:
-				fact=1;
-				System.out.println("팩토리알을 구할 숫자 n 입력");
-				n=sc.nextInt();
-				for(int i=1;i<=n;i++)
-					fact*=i;
-				System.out.println(n+"!="+fact);
 				break;
 			case 3:
-				System.out.println("원의 반지름 입력");
-				r=sc.nextInt();
-				area=r*r*Math.PI;
-				System.out.println("반지름 "+r+"인 원의 넓이는 "+area+"입니다");
 				break;
 			default:
 				System.out.println("프로그램을 종료합니다");	
