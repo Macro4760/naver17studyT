@@ -1,6 +1,6 @@
-package day1210;
+package day1218;
 
-public class Ex1Print {
+public class Ex5ArrayBinggo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

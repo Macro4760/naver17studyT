@@ -10,11 +10,21 @@ public class Ex15ArrayRandom {
 		 * 배열에 1~50 사이의 난수 20개를 구하여 넣고
 		 * 오름차순으로 정렬해서 출력을 하시오
 		 */
+		Loop:
 		for(int i=0;i<numbers.length;i++)
 		{
 			numbers[i]=(int)(Math.random()*50)+1;
 			
 			//이전에 발생한 값이랑 같을경우 다시구하기-중복처리로직추가
+			for(int j=0;j<i;j++)
+			{
+				if(numbers[i]==numbers[j])
+				{
+					i--;
+					//break;//방법1
+					continue Loop;//i++ 로 직접 이동
+				}
+			}
 			
 		}
 		
