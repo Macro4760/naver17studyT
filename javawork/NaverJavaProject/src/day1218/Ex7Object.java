@@ -21,7 +21,7 @@ public class Ex7Object {
 		Apple.message="Happy Day";
 		System.out.println(Apple.message);
 		
-		//Apple.EMP="삼성전자";//오류:final 산수는 값변경할수 없다
+		//Apple.EMP="삼성전자";//오류:final 상수는 값변경할수 없다
 		
 		//다른 클래스의 인스턴스 멤버변수를 접근하려면 new 로 생성된 인스턴스 변수가 있어야한다
 		Apple a=new Apple();
