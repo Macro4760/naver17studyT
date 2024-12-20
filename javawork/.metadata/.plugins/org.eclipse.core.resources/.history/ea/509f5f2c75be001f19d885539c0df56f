@@ -1,0 +1,16 @@
+package day1220;
+
+import javax.swing.JFrame;
+
+public class Ex1Inheri extends JFrame{
+	public Ex1Inheri() {
+		// TODO Auto-generated constructor stub
+		setBounds(300, 300, 300, 100);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Ex1Inheri();
+	}
+
+}
