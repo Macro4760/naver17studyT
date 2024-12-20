@@ -24,8 +24,7 @@ class DataProcess extends DbServerSystem
 		//서브클래스에 오버라이드 메서드가 없는겨우 this로 호출해도 상속받은 메서드가 호출된다
 		//이런경우 this 로 호출해도 되고 super 로 호출해도 된다
 		//하지만 오버라이드 메서드가 있는경우 부모메서드 호출시 반드시 super 로 호출
-		//this.serverStart();
-		super.serverStart();
+		this.serverStart();
 		System.out.println("SQL문 "+sql+"처리함");
 		this.serverClose();
 		System.out.println();
